@@ -48,7 +48,7 @@ contract Evaluator
 	{}
 
 	function ex1_showIHaveTokens()
-	public
+	public 
 	{
 		require(dummyToken.balanceOf(msg.sender) > 0, "You do not hold dummyTokens. Buy them on Uniswap");
 
@@ -103,7 +103,6 @@ contract Evaluator
 	{
 		// Checking ticker and supply were received
 		require(exerciceProgression[msg.sender][5]);
-
 		// Checking ticker was set properly
 		require(_compareStrings(assignedTicker[msg.sender], studentErc20[msg.sender].symbol()), "Incorrect ticker");
 		// Checking supply was set properly

@@ -1,0 +1,15 @@
+{
+  "name": "amm-101",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/maxencerb/amm-101.git",
+  "author": "Maxence Raballand <47566657+maxencerb@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "3.4.1",
+    "@supercharge/strings": "^1.25.0",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "dotenv": "^16.0.0",
+    "truffle": "^5.4.32"
+  }
+}
