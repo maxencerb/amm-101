@@ -10,6 +10,7 @@ var exerciceSolution = artifacts.require("ExerciceSolution.sol");
 const account = "0x3Ab484E75884b42AD86BE388D04b7B3208a5c6cD"
 
 module.exports = (deployer, network, accounts) => {
+	if(network == 'rinkeby') return
     deployer.then(async () => {
         await deployTDToken(deployer, network, accounts); 
         await deployEvaluator(deployer, network, accounts); 
